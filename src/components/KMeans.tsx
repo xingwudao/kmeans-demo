@@ -41,7 +41,7 @@ const KMeans = () => {
       setOriginalData(loadedData)
       setIsLoading(false)
     })
-    .catch(err => {
+    .catch(() => {
       setError('数据加载失败')
       setIsLoading(false)
     })
