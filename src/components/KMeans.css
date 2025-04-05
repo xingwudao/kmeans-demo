@@ -1,0 +1,106 @@
+.kmeans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  font-size: 16px;
+  color: #333;
+}
+
+.input-group input {
+  width: 60px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1976D2;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.visualization {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+}
+
+.loading {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px;
+}
+
+.data-point {
+  transition: stroke 0.3s ease;
+}
+
+.centroid {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  animation: breathe 1s ease-in-out infinite;
+}
+
+.centroid:hover {
+  stroke-width: 3;
+  fill-opacity: 0.9;
+}
+
+@keyframes breathe {
+  0% {
+    r: 5;
+    fill-opacity: 0.7;
+  }
+  50% {
+    r: 7;
+    fill-opacity: 0.9;
+  }
+  100% {
+    r: 5;
+    fill-opacity: 0.7;
+  }
+} 
